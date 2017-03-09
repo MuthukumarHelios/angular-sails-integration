@@ -1,7 +1,5 @@
-<p>This is the partial for view 1.</p>
 
-<h1>view 1 ment for manager actions to create managers</h1>
-<h3> used to crud in employss</h3>
+<h3> used to crud in manager</h3>
        <table>  
             <tr>  
               <td>Manager_Id: </td>  
@@ -11,13 +9,14 @@
             <tr>  
                 <td>Name:</td>  
                 <td>  
-             <input type="text" data-ng-model="Manager_Model.Name" /></td>  
-            </tr>  
+                <input type="text" data-ng-model="Manager_Model.Name" /></td>  
+            </tr>              
             <tr>  
-                <td>Salary:</td>  
+               <td>Salary:</td>  
                <td>  
                <input type="number" data-ng-model="Manager_Model.Salary" /></td>  
             </tr>  
+            
             <tr>  
                 <td>  
                     <input type="button" value="Save Data" data-ng-click="AddData()" /></td>  
@@ -25,16 +24,17 @@
                     <input type="button" value="Update Data" data-ng-click="UpdateData()" /></td>  
             </tr>  
         </table>  
-        <table border="1" style="width: 300px">  
+        
+         <table border="1" style="width: 300px">  
             <thead>  
                 <th>Id</th>  
                 <th>Name</th>  
                 <th>Salary</th>  
             </thead>  
-            <tr data-ng-repeat="man in Manager_List" data-ng-click="BindSelectedData(manager)">  
-                <td>{{ man.Id }}</td>  
-                <td>{{ man.Name }}</td>  
-                <td>{{ man.Salary }}</td>  
+            <tr data-ng-repeat="mang in Manager_List" data-ng-click="BindSelectedData(man)">  
+                <td>{{ mang.Id }}</td>  
+                <td>{{ mang.Name }}</td>  
+                <td>{{ mang.Salary }}</td>  
                 <td>  
               <input type="button" value="Delete" data-ng-click="DeleteData(manager)" /></td>  
             </tr>  
