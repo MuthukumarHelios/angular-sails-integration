@@ -1,18 +1,20 @@
+
 <p>view 2.</p>
+<h3>Manager can only create Employees and manipulate them</h3>
+<a href="#!/view3">Employee View</a></li>
 <table border="1" style="width: 300px">  
             <thead>  
                 <th>Id</th>  
                 <th>Name</th>  
                 <th>Salary</th>  
             </thead>  
-          <script src = "view1/view1.js"></script>  
-          <div ng-controller="View1Ctrl">
-            <tr data-ng-repeat="man in Manager_List">  
-                 
+          <!--<script src = "view1/view1.js"></script>  -->
+          <div ng-controller="View1Ctrl" ng-init="check()" >
+            
+            <tr ng-repeat="man in Manager_List">  
                  <td>{{ man.Id }}</td>  
                  <td>{{ man.Name }}</td>  
-                 <td>{{ man.Salary }}</td>  
-             <td>    
+                 <td>{{ man.Salary }}</td>      
             </tr>  
          </div>  
 </table>  
@@ -36,10 +38,10 @@
             </tr>  
             <tr>  
                 <td>  
-                    <input type="submit" value= "Save Data" data-ng-click="AddData()" /></td>  
+                <input type="button" value= "Save Data" data-ng-click="AddData()" /></td>  
                 <td>  
-                    <input type="submit" value= "Update Data" data-ng-click="UpdateData()" /></td>  
-            </tr>  
+                <input type="button" value= "Update Data" data-ng-click="UpdateData()" /></td>  
+                </tr>  
         </table>  
         <table border="1" style="width: 300px">  
             <thead>  
@@ -47,11 +49,10 @@
                 <th>Name</th>  
                 <th>Salary</th>  
             </thead>  
-            <tr data-ng-repeat="Emp in EmpList" data-ng-click="BindSelectedData(Emp)">  
+            <tr data-ng-repeat="Emp in EmpList" data-ng-click="BindSelectedData(Emp)">                 
                 <td>{{ Emp.Id }}</td>  
                 <td>{{ Emp.Name }}</td>  
                 <td>{{ Emp.Salary }}</td>  
-                <td>  
-            <input type="button" value="Delete" data-ng-click="DeleteData(Emp)" /></td>  
-            </tr>  
+                <td><input type="button" value="Delete" data-ng-click="DeleteData(Emp)"/></td>  
+           </tr>  
      </table>  

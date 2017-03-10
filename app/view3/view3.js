@@ -13,4 +13,7 @@ angular.module('myApp.view3', ['ngRoute'])
 
 .controller('view3Ctrl', ['$scope', function($scope) {
     $scope.EmpList = [{Id:1, Salary: 200, Name: "muthu"},{Id:2, Salary: 300, Name: "vel"}];
-}])
+}
+
+
+])
