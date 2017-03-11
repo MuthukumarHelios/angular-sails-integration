@@ -19,7 +19,14 @@ angular.module('myApp.view2', ['ngRoute'])
               Name: '',  
             };  
             $scope.AddData = function () {  
-                 $scope.EmpList.push($scope.EmpModel);
+                 var _employee = {
+                   Id: $scope.EmpList.length+1,  
+                   Salary: $scope.EmpList.Salary,  
+                   Name: $scope.EmpList.Name,  
+                 }                
+ 
+
+                 $scope.EmpList.push(_employee);
             }  
             $scope.DeleteData = function (emp) {  
                 console.log(emp);
