@@ -1,9 +1,8 @@
 <ul class="menu" >
-    
     <li><a href="#!/view2">Manager</a></li>
     <li><a href="#!/view3">Employee</a></li>
   </ul>
-
+<h3 ng-bind = "myWelcome"> </h3>
 
 <h3>Administrator</h3>
 <h3>Name: Admin</h3>
@@ -14,22 +13,22 @@
             <tr>  
               <td>Manager_Id: </td>  
                <td>  
-                <span>{{ Manager_Model.Id }}</span></td>  
+                  <span>{{ Manager_Model.Id }}</span></td>  
             </tr>  
             <tr>  
                 <td>Name:</td>  
                 <td>  
-                <input type="text" data-ng-model="Manager_Model.Name" /></td>  
+                <input type="text" ng-model="Manager_List.Name" /></td>  
             </tr>              
             <tr>  
                <td>Salary:</td>  
                <td>  
-               <input type="number" data-ng-model="Manager_Model.Salary" /></td>  
+               <input type="number" ng-model="Manager_List.Salary" /></td>  
             </tr>  
             
             <tr>  
                 <td>  
-                    <input type="button" value="Save Data" data-ng-click="AddData()" /></td>  
+                    <input type="button" value="Save Data" ng-click="AddData()" /></td>  
                 <td>  
                     <input type="button" value="Update Data" data-ng-click="UpdateData()" /></td>  
             </tr>  
@@ -46,6 +45,5 @@
                 <td>{{ mang.Name }}</td>  
                 <td>{{ mang.Salary }}</td>  
                 <td>  
-              <input type="button" value="Delete" data-ng-click="DeleteData(manager)" /></td>  
-            </tr>  
+            <input type="button" value="Delete" data-ng-click="DeleteData(manager)" /></td>      </tr>  
         </table>  
