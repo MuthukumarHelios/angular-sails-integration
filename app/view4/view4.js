@@ -10,18 +10,16 @@ console.log("view4.js");
 }])
  .controller('login',  ['$scope' , '$location', '$window', function($scope, $location, $window){
      console.log("login controller called");   
-       $scope.valid = function (){
-           
-                     console.log("validation  script source");
-           $scope.admin ={
+       
+       
+       $scope.valid = function (){            
+            $scope.admin ={
              name     : 'admin',  //$scope.admin is used to call from model
              password : 'admin' 
            };
-           console.log($scope.admin.name);
-           console.log($scope.admin.password);
-           console.log(name);
-            //storing credentials for password 
-                if($scope.admin.name == name && $scope.admin.password == password){
+                console.log($scope.admin.name);
+                console.log($scope.admin.password);          
+          if($scope.admin.name === $scope.name && $scope.admin.password === $scope.password){
                      console.log("valid");
                      console.log($window);
                      $window.location.href = '/index.html#!/view1'; 
