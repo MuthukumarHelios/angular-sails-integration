@@ -1,4 +1,4 @@
-console.log("view3")
+console.log("view3.js")
 //console.log("view1.js");
 'use strict';
 angular.module('myApp.view3', ['ngRoute'])
@@ -8,4 +8,6 @@ angular.module('myApp.view3', ['ngRoute'])
      templateUrl: 'view3/view3.html',
      controller: 'View2Ctrl'
    });
+
+
 }]);

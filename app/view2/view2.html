@@ -1,14 +1,14 @@
 
 <p>view 2.</p>
 <h3>Manager can only create Employees and manipulate them</h3>
-<a href="#!/view3">Employee View</a></li>
+<a ng-href="#!/view3">Employee View</a></li>
 <table border="1" style="width: 300px">  
             <thead>  
                 <th>Id</th>  
                 <th>Name</th>  
                 <th>Salary</th>  
             </thead>  
-          <!--<script src = "view1/view1.js"></script>  -->
+          <!--<script src = "view1/view1.js"></script> -->
           <div ng-controller="View1Ctrl" ng-init="check()" >
             
             <tr ng-repeat="man in Manager_List">  
@@ -34,7 +34,7 @@
             <tr>  
                 <td>Salary:</td>  
                <td>  
-               <input type="number" ng-model="EmpList.Salary" /></td>  
+               <input type="number" ng-model="EmpList.Salary"/></td>  
             </tr>  
             <tr>  
                 <td>  
@@ -44,15 +44,19 @@
                 </tr>  
         </table>  
         <table border="1" style="width: 300px">  
+           
             <thead>  
                 <th>Id</th>  
                 <th>Name</th>  
                 <th>Salary</th>  
             </thead>  
+           
             <tr data-ng-repeat="Emp in EmpList" data-ng-click="BindSelectedData(Emp)">                 
                 <td>{{ Emp.Id }}</td>  
                 <td>{{ Emp.Name }}</td>  
                 <td>{{ Emp.Salary }}</td>  
                 <td><input type="button" value="Delete" data-ng-click="DeleteData(Emp)"/></td>  
-           </tr>  
-     </table>  
+            </tr>  
+        
+        </table>  
+     

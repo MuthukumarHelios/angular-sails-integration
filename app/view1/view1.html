@@ -1,6 +1,6 @@
 <ul class="menu" >
-    <li><a href="#!/view2">Manager</a></li>
-    <li><a href="#!/view3">Employee</a></li>
+    <li><a ng-href="#!/view2">Manager</a></li>
+    <li><a ng-href="#!/view3">Employee</a></li>
   </ul>
 <h3 ng-bind = "myWelcome"> </h3>
 
@@ -40,10 +40,10 @@
                 <th>Name</th>  
                 <th>Salary</th>  
             </thead>  
-            <tr data-ng-repeat="mang in Manager_List" data-ng-click="BindSelectedData(mang)">  
+          <tr data-ng-repeat="mang in Manager_List" data-ng-click="BindSelectedData(mang)">  
                 <td>{{ mang.Id }}</td>  
                 <td>{{ mang.Name }}</td>  
                 <td>{{ mang.Salary }}</td>  
                 <td>  
-            <input type="button" value="Delete" data-ng-click="DeleteData(manager)" /></td>      </tr>  
-        </table>  
+          <input type="button" value="Delete" data-ng-click="DeleteData(manager)" /></td>      </tr>  
+          </table>  

@@ -9,6 +9,7 @@ angular.module('myApp.view1', ['ngRoute'])
    });
 }])
 
+
 .controller('View1Ctrl', ['$scope','$http', function($scope, $http) {
     console.log("controller view1")
        //'$scope' is used for the hash and array declaration 
