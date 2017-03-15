@@ -3,22 +3,11 @@ console.log("view2.js");
 
 angular.module('myApp.view2', ['ngRoute'])
 
-// .config(['$routeProvider', function($routeProvider) {
-//   $routeProvider.when('/view2', {
-//     templateUrl: 'view2/view2.html',
-//     controller: 'View2Ctrl',
-//     data: {
-//       authorisation: true,
-//       redirectTo: 'view3/view3.html'
-//     }
-//     //controller: 'View1Ctrl'
-//   });
-// }])
 
 .controller('View2Ctrl', ['$scope', function($scope) {
     //" '$scope' is used for hash declaration of the main function in model"-->denotes the injector
-        $scope.EmpList = [{Id:1, Salary: 200, Name: "muthu"},
-                                              {Id:2, Salary: 300, Name: "vel"}];
+        $scope.EmpList = [{Id:1, Salary: 200, Name: "muthu",password: 'pass'},
+                                              {Id:2, Salary: 300, Name: "vel", password: 'pass'}];
 
             $scope.AddData = function () {
                var _employee = {

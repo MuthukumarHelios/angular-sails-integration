@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.view3',
   'myApp.view4',
+  'myApp.view5',
   'myApp.version',
 
 ]).
@@ -34,6 +35,10 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
           .when("/view4",{
           templateUrl: "view4/view4.html",
           controller: "login"
+          })
+          .when("/view5",{
+            templateUrl: "view5/view5.html",
+            controller: "login"
           })
         
         

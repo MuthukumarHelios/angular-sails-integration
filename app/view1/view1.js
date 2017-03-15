@@ -21,6 +21,7 @@ angular.module('myApp.view1', ['ngRoute'])
             };  
             $scope.check = function(){
                 console.log($scope.Manager_List);
+                return '';
             }
             $scope.AddData = function () {  
                
@@ -29,7 +30,8 @@ angular.module('myApp.view1', ['ngRoute'])
                       Salary:$scope.Manager_List.Salary,  
                       Name: $scope.Manager_List.Name,  
                     };      
-              $scope.Manager_List.push(_manager);                                   
+              $scope.Manager_List.push(_manager);    
+              return '';                               
              }    
             
             $scope.DeleteData = function (manager) {  

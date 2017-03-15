@@ -13,10 +13,11 @@ console.log("view4.js");
        
        
        $scope.valid = function (){            
-            $scope.admin ={
-             name     : 'admin',  //$scope.admin is used to call from model
-             password : 'admin' 
-           };
+            $scope.admin = {name     : 'admin',  //$scope.admin is used to call from model
+                             password : 'admin', 
+                            }
+            
+           ;
                 console.log($scope.admin.name);
                 console.log($scope.admin.password);          
           if($scope.admin.name === $scope.name && $scope.admin.password === $scope.password){
