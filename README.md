@@ -67,6 +67,13 @@ app/                    --> all of the source files for the application
     view3.html            --> the partial template
     view3.js              --> the controller logic
     view3_test.js         --> tests of the controller
+  view4/                --> the view2 view template and logic
+    view4.html            --> the partial template
+    view4.js              --> the controller logic meant for admin login
+  view5/                --> the view2 view template and logic
+    view5.html            --> the partial template
+    view5.js              --> the controller logic --meant for adminlogin
+    
   
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
