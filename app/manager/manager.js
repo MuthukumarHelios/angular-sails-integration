@@ -1,7 +1,7 @@
 'use strict';
-console.log("view2.js");
+console.log("view2.js ==>manager");
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('myApp.manager', ['ngRoute'])
 
 
 .controller('View2Ctrl', ['$scope', function($scope) {
